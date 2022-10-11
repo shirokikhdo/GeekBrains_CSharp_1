@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA418A0E-6111-4FF4-9B0E-8EE60A1F6C35}</ProjectGuid>
+    <ProjectGuid>{1C578395-7677-4D75-9AA0-11E1FF0B2A13}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>H1E1_Form</RootNamespace>
-    <AssemblyName>H1E1_Form</AssemblyName>
+    <RootNamespace>H1E2_BodyMassIndex</RootNamespace>
+    <AssemblyName>H1E2_BodyMassIndex</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
