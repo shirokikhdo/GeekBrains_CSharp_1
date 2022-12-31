@@ -1,0 +1,42 @@
+﻿<Window x:Class="H8E2_NumericUpDown.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:H8E2_NumericUpDown"
+        mc:Ignorable="d"
+        Title="NumericUpDown" Height="150" Width="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding UpDownText}"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0"
+                        Content="+"
+                        Command="{Binding IncrementCmd}"/>
+                <Button Grid.Row="1"
+                        Content="-"
+                        Command="{Binding DecrementCmd}"/>
+            </Grid>
+        </Grid>
+        <TextBlock Grid.Column="1"
+                   Text="{Binding TextData}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+    </Grid>
+</Window> 
